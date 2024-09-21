@@ -1,0 +1,136 @@
+#women{
+    margin-top: 50px;
+
+  width: 100%;
+  height: 100%;
+
+     .woman{
+       
+       
+
+  
+    .women_head{
+        padding: 100px 0 60px 0;
+        color: $black_color;
+
+     @include Flexible(center, flex-start, column, wrap, 10px);
+     @media (max-width:768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+              }
+                    h1{
+                        font-weight: 600;
+                        font-size: 32px;
+                        @media (max-width:768px) {
+                            line-height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                    
+                          
+                                  }
+                    }
+                    p{
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+
+.women_card{
+    color: $black_color;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100%;
+@media (max-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    &__img{
+        position: relative;
+        width: 255px;
+        height: 271px;
+        img{
+            @extend %base_img;
+        }
+
+.women_card_icon{
+position: absolute;
+bottom: 20%;
+color:$white_color;
+background: rgb(255,0,131);
+background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
+text-align: center;
+opacity: 0;
+left: 29px;
+transition: 0.6s ease-in-out;
+transform: translate(0,  50%);
+display: flex;
+justify-content: space-between;
+
+.women_icon{
+
+    @include Flexible(center, flex-start, row, wrap, 0px);
+justify-content: space-evenly;
+    i{
+padding: 10px 15px;
+transition: 0.3s ease-in-out;
+&:hover{
+    background-color: $white_color;
+    color: $black_color;
+}
+    }
+}
+
+
+
+
+
+}
+&::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.329);
+    opacity: 0;
+}
+&:hover:after{
+
+    opacity: 1;
+}
+&:hover {
+    .women_card__img{
+
+        z-index: 1;
+        color: #00000072
+    }
+
+    .women_card_icon{
+
+        cursor: pointer;
+        z-index: 3;
+    opacity: 1;
+    transform: translate(0,-250%);
+    }
+}
+ }
+    &__price{
+        line-height: 40px;
+        margin-bottom: 100px;
+        h1{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        p{
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+}
+}
+
+}

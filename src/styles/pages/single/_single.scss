@@ -1,0 +1,113 @@
+.single_left_img{
+    margin-top: 80px;
+
+    img{
+        @extend %base_img;
+    }
+}
+
+.single_right_side{
+    padding-left: 30px;
+    margin-top: 80px;
+    @include Flexible(flex-start, center, column, wrap, 10px);
+
+
+    .single_right_head{
+        border-bottom: 1px solid rgba(197, 197, 197, 0.591);
+        padding-bottom: 50px;
+        width: 100%;
+        h1{
+            padding-top: 60px;
+    font-weight: 450;
+    font-size: 23px
+        }
+        .price{
+            padding: 10px 0;
+    color: $pink_color;
+    font-size: 24px;
+            @include Flexible(flex-start, flex-start, row, wrap, 10px);
+            p{
+                font-weight: 800;
+            }
+        }
+        .category{
+            margin-top: 10px;
+            line-height: 40px;
+            p{
+    color: rgb(150, 150, 150);
+    span{
+        color: $pink_color;
+    }
+            }
+        }
+        .avaible{
+            p{
+    color: rgb(150, 150, 150);
+    span{
+        color: $black_color;
+    }
+            }
+        }
+    }
+    .singlie_right_mid{
+width: 100%;
+        padding: 30px 0;
+        border-bottom: 1px solid rgba(197, 197, 197, 0.591);
+        p{
+            font-size: 15px;
+            line-height: 30px;
+            max-width: 450px;
+            width: 100%;
+            color: rgb(107, 107, 107);
+        }
+    }
+    .single_end{
+        .quantity{
+            @include Flexible(flex-start, baseline, row, wrap, 10px);
+            margin-top: 20px;
+            font-size: 20px;
+            p{
+                margin-top: 5px;
+                @include Flexible(flex-start, center, row, wrap, 10px);
+            }
+            input{
+                ::placeholder{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                width: 50px;
+            }
+        }
+        .single_cart{
+            margin-top: 30px;
+button{
+    border-radius: 4px;
+    padding: 13px 33px;
+    border: none;
+    box-shadow: 0 0 10px rgb(161, 161, 161);
+    background-color: $white_color;
+    transition: 0.2s ease-in-out;
+    &:hover{
+        color: $white_color;
+        background-image: -webkit-linear-gradient(45deg, #f6463d 0%, #f6398d 45%, #f52cdc 100%);
+    }
+}
+.btn_icon{
+    margin-left: 20px;
+ display: inline-block;
+    i{
+    
+        color: $black_color;
+        background-color:#f5f9ff;
+        padding: 10px 13px;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            background-color: $white_color;
+            box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+        }
+    }
+}

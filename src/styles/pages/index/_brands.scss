@@ -1,0 +1,25 @@
+.brand {
+    background-color: $white_color;
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+    display: flex;
+    gap: 30px;
+    padding: 50px 0;
+    @include Flexible(center, flex-start, row, wrap, 0px);
+.brand_img{
+    @include Flexible(center, center, row, wrap, 60px);
+padding: 0 90px;
+
+li{
+    width: 130px;
+    height: 70px;    img{
+        @extend%base_img;
+        filter: grayscale(100%);
+        transition: 0.4s ease-in-out;
+        &:hover{
+            filter: grayscale(0);
+        }
+    }
+}
+}
+
+}
