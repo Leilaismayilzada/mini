@@ -1901,7 +1901,7 @@ footer {
 }
 .filter .color_box h1 {
   line-height: 50px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
 }
 .filter .color_box ul li {
@@ -1919,7 +1919,7 @@ footer {
 .filter .price_box {
   background-color: #fff;
   padding: 10px 20px;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.64);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.658);
 }
 .filter .price_box h2 {
   line-height: 50px;
