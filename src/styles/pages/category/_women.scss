@@ -1,216 +1,249 @@
-.women_card{
+.women_card {
     color: $black_color;
     padding-bottom: 100px;
     width: 100%;
     height: 100%;
-@media (max-width:768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    &__img{
+
+    @media (max-width:768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
         position: relative;
         width: 255px;
         height: 271px;
-        img{
+
+        img {
             @extend %base_img;
         }
 
-.women_card_icon{
-position: absolute;
-bottom: 20%;
-color:$white_color;
-background: rgb(255,0,131);
-background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-text-align: center;
-opacity: 0;
-left: 29px;
-transition: 0.6s ease-in-out;
-transform: translate(0,  50%);
-display: flex;
-justify-content: space-between;
+        .women_card_icon {
+            position: absolute;
+            bottom: 20%;
+            color: $white_color;
+            background: rgb(255, 0, 131);
+            background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+            text-align: center;
+            opacity: 0;
+            left: 29px;
+            transition: 0.6s ease-in-out;
+            transform: translate(0, 50%);
+            display: flex;
+            justify-content: space-between;
 
-.women_icon{
+            .women_icon {
 
-    @include Flexible(center, flex-start, row, wrap, 0px);
-justify-content: space-evenly;
-    i{
-padding: 10px 15px;
-transition: 0.3s ease-in-out;
-&:hover{
-    background-color: $white_color;
-    color: $black_color;
-}
+                @include Flexible(center, flex-start, row, wrap, 0px);
+                justify-content: space-evenly;
+
+                i {
+                    padding: 10px 15px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: $white_color;
+                        color: $black_color;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.329);
+            opacity: 0;
+        }
+
+        &:hover:after {
+
+            opacity: 1;
+        }
+
+        &:hover {
+            .women_card__img {
+
+                z-index: 1;
+                color: #00000072
+            }
+
+            .women_card_icon {
+
+                cursor: pointer;
+                z-index: 3;
+                opacity: 1;
+                transform: translate(0, -250%);
+            }
+        }
     }
-}
 
-
-
-
-
-}
-&::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0px;
-    background-color: rgba(0, 0, 0, 0.329);
-    opacity: 0;
-}
-&:hover:after{
-
-    opacity: 1;
-}
-&:hover {
-    .women_card__img{
-
-        z-index: 1;
-        color: #00000072
-    }
-
-    .women_card_icon{
-
-        cursor: pointer;
-        z-index: 3;
-    opacity: 1;
-    transform: translate(0,-250%);
-    }
-}
- }
-    &__price{
+    &__price {
         line-height: 40px;
         margin-bottom: 100px;
-        h1{
+
+        h1 {
             font-size: 17px;
             font-weight: 600;
         }
-        p{
+
+        p {
             font-weight: 700;
             font-size: 24px;
         }
     }
 }
-.browse{
+
+.browse {
     margin-top: 80px;
     margin-left: 30px;
-    .browse_card{
+
+    .browse_card {
         background-color: $form_background;
-        h1{
+
+        h1 {
             padding: 20px;
         }
-        .category_card{
-background-color: $white_color;
-margin:  2px;
-padding: 0 20px;
-ul{
-  li{
-    transition: 0.4s ease-in-out;
-    cursor: pointer;
-    @include Flexible(center, flex-start, row, wrap, 10px);
-    font-size: 13px;
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(199, 199, 199, 0.672);
-    span{
-        color: rgb(184, 184, 184);
-    }
-    &:hover{ 
-        color: rgb(255,0,131);
-        color: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-    
-    }
-  }
-}
+
+        .category_card {
+            background-color: $white_color;
+            margin: 2px;
+            padding: 0 20px;
+
+            ul {
+                li {
+                    transition: 0.4s ease-in-out;
+                    cursor: pointer;
+                    @include Flexible(center, flex-start, row, wrap, 10px);
+                    font-size: 13px;
+                    padding: 20px 0;
+                    border-bottom: 1px solid rgba(199, 199, 199, 0.672);
+
+                    span {
+                        color: rgb(184, 184, 184);
+                    }
+
+                    &:hover {
+                        color: rgb(255, 0, 131);
+                        color: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+
+                    }
+                }
+            }
         }
     }
 }
-.filter{
+
+.filter {
     margin-top: 30px;
     margin-left: 30px;
     background-color: $form_background;
-    .filter_head{
 
-        h1{
+    .filter_head {
+
+        h1 {
             padding: 15px 20px;
             font-size: 18px;
             font-weight: 400;
         }
-        .filters{
-border-bottom: 1px solid rgba(211, 211, 211, 0.64);
-    padding:10px 20px;
+
+        .filters {
+            border-bottom: 1px solid rgba(211, 211, 211, 0.64);
+            padding: 10px 20px;
             background-color: $white_color;
-            h2{
+
+            h2 {
                 line-height: 60px;
                 font-weight: 600;
                 font-size: 18px;
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     line-height: 30px;
                     @include Flexible(center, flex-start, row, wrap, 15px);
-                        color: #656565;
-                        font-weight: 400;
-                    
+                    color: #656565;
+                    font-weight: 400;
+
                 }
             }
         }
-    
+
     }
-    .check_box{
+
+    .check_box {
         background-color: $white_color;
-        padding:10px 20px;
+        padding: 10px 20px;
         border-bottom: 1px solid rgba(211, 211, 211, 0.64);
-        h1{
+
+        h1 {
             line-height: 50px;
             font-size: 18px;
             font-weight: 600;
         }
-        ul{
-            li{
+
+        ul {
+            li {
                 line-height: 30px;
                 @include Flexible(center, flex-start, row, wrap, 15px);
-                    color: #656565;
-                    font-weight: 300;
-                    font-size: 20px;
+                color: #656565;
+                font-weight: 300;
+                font-size: 20px;
             }
         }
     }
-    .color_box{
+
+    .color_box {
         background-color: $white_color;
-        padding:10px 20px;
+        padding: 10px 20px;
         border-bottom: 1px solid rgba(211, 211, 211, 0.64);
-        h1{
+
+        h1 {
             line-height: 50px;
             font-size: 17px;
             font-weight: 600;
         }
-        ul{
-            li{
+
+        ul {
+            li {
                 line-height: 30px;
                 @include Flexible(center, flex-start, row, wrap, 15px);
-                    color: #656565;
-                    font-weight: 300;
-                    font-size: 20px;
+                color: #656565;
+                font-weight: 300;
+                font-size: 20px;
             }
-        } 
+        }
     }
-    .price_box{
+
+    .price_box {
         background-color: $white_color;
-        padding:10px 20px;
+        padding: 10px 20px;
         border-bottom: 1px solid rgba(211, 211, 211, 0.658);
-h2{
-    line-height: 50px;
-    font-size: 18px;
-    font-weight: 600;
-}
-p{
-    margin-top: 40px;
-    font-size: 15px;
-    color: #7777;
-    padding-bottom: 10px;
-    span{
-        color: #cccc;
-    }
-}
+
+        h2 {
+            line-height: 50px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 40px;
+            font-size: 15px;
+            color: #7777;
+            padding-bottom: 10px;
+
+            span {
+                color: #cccc;
+            }
+        }
     }
 }

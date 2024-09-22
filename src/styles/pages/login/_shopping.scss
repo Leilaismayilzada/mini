@@ -6,20 +6,23 @@
     .shopping_txt {
         padding: 0 70px;
         @include Flexible(flex-start, flex-start, column, wrap, 40px);
+
         h1 {
             font-weight: 600;
             font-size: 29px;
             color: $white_color;
         }
+
         p {
-            
+
             margin-bottom: 60px;
-           a{
-            color: $white_color;
-            outline: none;
-            text-decoration: none;
-            margin-bottom: 60px;
-           }
+
+            a {
+                color: $white_color;
+                outline: none;
+                text-decoration: none;
+                margin-bottom: 60px;
+            }
         }
     }
 }

@@ -1,166 +1,207 @@
-.product_left_nav{
+.product_left_nav {
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
     background-color: $form_background;
     padding: 10px 10px;
-    .left_side{
-    @include Flexible(center, flex-start, row, wrap, 10px);
-        .active_icon{
-          i{
-            padding: 13px;
-            color: white;
-            background: rgb(255,0,131);
-            background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-            
-          }
-        }
-        .none_icon{
-            i{
 
-            border: 1px solid rgba(210, 210, 210, 0.253);
-            padding: 13px;
+    .left_side {
+        @include Flexible(center, flex-start, row, wrap, 10px);
+
+        .active_icon {
+            i {
+                padding: 13px;
+                color: white;
+                background: rgb(255, 0, 131);
+                background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
 
             }
-            &:hover{
-                background: rgb(255,0,131);
-                background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-          i{
-            color: $white_color;
-          }    
-            }
         }
-        .sorting_btn{
-            button{
-background-color: white;
+
+        .none_icon {
+            i {
+
                 border: 1px solid rgba(210, 210, 210, 0.253);
-            padding: 11px 17px;
-            p{ @include Flexible(center, flex-start, row, wrap, 40px);
-                color: rgb(119, 119, 119);
-                i{
-                    font-size: 10px;
+                padding: 13px;
+
+            }
+
+            &:hover {
+                background: rgb(255, 0, 131);
+                background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+
+                i {
+                    color: $white_color;
                 }
             }
         }
-        }
-        .show_btn{
-            button{
+
+        .sorting_btn {
+            button {
                 background-color: white;
-                                border: 1px solid rgba(210, 210, 210, 0.253);
-                            padding: 11px 17px;
-                            p{ @include Flexible(center, flex-start, row, wrap,20px);
-                                color: rgb(119, 119, 119);
-                                i{
-                                    font-size: 10px;
-                                }
-                            }
-                        }
+                border: 1px solid rgba(210, 210, 210, 0.253);
+                padding: 11px 17px;
+
+                p {
+                    @include Flexible(center, flex-start, row, wrap, 40px);
+                    color: rgb(119, 119, 119);
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .show_btn {
+            button {
+                background-color: white;
+                border: 1px solid rgba(210, 210, 210, 0.253);
+                padding: 11px 17px;
+
+                p {
+                    @include Flexible(center, flex-start, row, wrap, 20px);
+                    color: rgb(119, 119, 119);
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
-    .button_side{
- @include Flexible(center, flex-start, row, wrap, 0px);
- button{
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    display: inline-block;
-    background: #fff;
-   border: 1px solid #eee;;
-&:hover{
-    background: rgb(255,0,131);
-    background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-color: $white_color; 
+
+    .button_side {
+        @include Flexible(center, flex-start, row, wrap, 0px);
+
+        button {
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #eee;
+            ;
+
+            &:hover {
+                background: rgb(255, 0, 131);
+                background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+                color: $white_color;
+            }
+        }
+
+        .active {
+            background: rgb(255, 0, 131);
+            background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+            color: $white_color;
+        }
+
+        i {
+            margin: 0 9px;
+        }
+    }
 }
-}
-.active{
-    background: rgb(255,0,131);
-    background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-color: $white_color;    
-}
-   i{
-   margin: 0 9px;
-}}
-}
-.product_left_nav_alt{
+
+.product_left_nav_alt {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
     background-color: $form_background;
     padding: 10px 10px;
-    .left_side{
-    @include Flexible(center, flex-start, row, wrap, 10px);
-        .active_icon{
-          i{
-            padding: 13px;
-            color: white;
-            background: rgb(255,0,131);
-            background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-            
-          }
-        }
-        .none_icon{
-            i{
 
-            border: 1px solid rgba(210, 210, 210, 0.253);
-            padding: 13px;
+    .left_side {
+        @include Flexible(center, flex-start, row, wrap, 10px);
+
+        .active_icon {
+            i {
+                padding: 13px;
+                color: white;
+                background: rgb(255, 0, 131);
+                background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
 
             }
-            &:hover{
-                background: rgb(255,0,131);
-                background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-          i{
-            color: $white_color;
-          }    
-            }
         }
-        .sorting_btn{
-            button{
-background-color: white;
+
+        .none_icon {
+            i {
+
                 border: 1px solid rgba(210, 210, 210, 0.253);
-            padding: 11px 17px;
-            p{ @include Flexible(center, flex-start, row, wrap, 40px);
-                color: rgb(119, 119, 119);
-                i{
-                    font-size: 10px;
+                padding: 13px;
+
+            }
+
+            &:hover {
+                background: rgb(255, 0, 131);
+                background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+
+                i {
+                    color: $white_color;
                 }
             }
         }
-        }
-        .show_btn{
-            button{
+
+        .sorting_btn {
+            button {
                 background-color: white;
-                                border: 1px solid rgba(210, 210, 210, 0.253);
-                            padding: 11px 17px;
-                            p{ @include Flexible(center, flex-start, row, wrap,20px);
-                                color: rgb(119, 119, 119);
-                                i{
-                                    font-size: 10px;
-                                }
-                            }
-                        }
+                border: 1px solid rgba(210, 210, 210, 0.253);
+                padding: 11px 17px;
+
+                p {
+                    @include Flexible(center, flex-start, row, wrap, 40px);
+                    color: rgb(119, 119, 119);
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .show_btn {
+            button {
+                background-color: white;
+                border: 1px solid rgba(210, 210, 210, 0.253);
+                padding: 11px 17px;
+
+                p {
+                    @include Flexible(center, flex-start, row, wrap, 20px);
+                    color: rgb(119, 119, 119);
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
-    .button_side{
- @include Flexible(center, flex-start, row, wrap, 0px);
- button{
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    display: inline-block;
-    background: #fff;
-   border: 1px solid #eee;;
-&:hover{
-    background: rgb(255,0,131);
-    background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-color: $white_color; 
-}
-}
-.active{
-    background: rgb(255,0,131);
-    background: linear-gradient(111deg, rgba(255,0,131,1) 0%, rgba(255,0,97,1) 52%, rgba(255,0,186,1) 79%);
-color: $white_color;    
-}
-   i{
-   margin: 0 9px;
-}}
+
+    .button_side {
+        @include Flexible(center, flex-start, row, wrap, 0px);
+
+        button {
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #eee;
+            ;
+
+            &:hover {
+                background: rgb(255, 0, 131);
+                background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+                color: $white_color;
+            }
+        }
+
+        .active {
+            background: rgb(255, 0, 131);
+            background: linear-gradient(111deg, rgba(255, 0, 131, 1) 0%, rgba(255, 0, 97, 1) 52%, rgba(255, 0, 186, 1) 79%);
+            color: $white_color;
+        }
+
+        i {
+            margin: 0 9px;
+        }
+    }
 }
